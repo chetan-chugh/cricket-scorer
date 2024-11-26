@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:gainsboro;
+    font-family: "Poppins", serif;
+}
+
+header{
+    background-color: green;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+
+header button{
+    padding: 0 5px;
+    margin-left: 20px;
+    border: none;
+    background-color: green;
+}
+
+header i{
+    color: white;
+    font-size:20px;
+}
+
+header h2{
+    padding-left: 50px;
+}
+
+.block{
+    background-color: white; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+}
+
+.score-card{
+    display: flex;
+    font-size: 30px;
+}
+
+.batsman-score td, .batsman-score th, .bowler-score td, .bowler-score th{
+    padding: 7px 5px;
+    text-align: left;
+}
+
+.batsman-score table th:first-child, .bowler-score table th:first-child{
+    padding-right: 100px;
+}
+
+.batsman-score table th:not(1), .bowler-score table th:not(1){
+    padding: 100px;
+}
+
+.batsman-score table td, .bowler-score table td{
+    padding: 0 15px;
+}
+
+.runs ul{
+    display: flex;
+}
+
+.runs h3{
+    margin:13px 100px 0 10px;
+}
+
+.runs li{
+    list-style: none;
+    
+}
+.runs button{
+    border: 2px solid green;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.runs button:hover{
+    border: 2px solid black;
+    color: white;
+    background-color:green;
+}
+
+#non-strike-symbol{
+    visibility:hidden;
+}

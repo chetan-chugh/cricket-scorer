@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/match.css" type="text/css">
+    <title>Match</title>
+</head>
+<body>
+    <header>
+        <button><a href="/html/index.html"><i class="fa-solid fa-left-long"></i></a></button>
+        <h2>Host Team v/s Visitor Team</h2>
+    </header>
+    <div class="scoreboard block">
+        <p>Team, 1st inning</p>
+        <div class="score-card">
+            <p id="total-score">00</p> 
+            <p>-</p>
+            <p class="wicket">0</p>
+        </div>
+    </div>
+    <div class="batsman-score block">
+        <table>
+            <tr>
+                <th>Batsman</th>
+                <td>R</td>
+                <td>B</td>
+                <td>4s</td>
+                <td>6s</td>
+            </tr>
+            <tr>
+                <th>Striker<span id="strike-symbol">*</span></th>
+                <th id="striker-run">00</th>
+                <td id="striker-bowl">0</td>
+                <td id="striker-4s">0</td>
+                <td id="striker-6s">0</td>
+            </tr>
+            <tr>
+                <th>Non-striker<span id="non-strike-symbol"></span></th>
+                <th id="non-striker-run">00</th>
+                <td id="non-striker-bowl">0</td>
+                <td id="non-striker-4s">0</td>
+                <td id="non-striker-6s">0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bowler-score block">
+        <table>
+            <tr>
+                <th>Bowler</th>
+                <td>O</td>
+                <td>M</td>
+                <td>R</td>
+                <td>W</td>
+            </tr>
+            <tr>
+                <th>Bowler name</th>
+                <th><span id="other">0</span>.<span id="bowler-over">0</span></th>
+                <td id="madian">0</td>
+                <td id="bowler-run">0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <div class="this-over block">
+        <h4>This Over:</h4>
+    </div>
+    <div class="runs block">
+        <ul>
+            <h3>Runs</h3>
+            <li><button id="zero" class="run" onclick="zeroRun()">0</button></li>
+            <li><button id="one" class="run" onclick="oneRun()">1</button></li>
+            <li><button id="two" class="run" onclick="twoRun()">2</button></li>
+            <li><button id="three" class="run" onclick="threeRun()">3</button></li>
+            <li><button id="four" class="run" onclick="fourRun()">4</button></li>
+            <li><button id="six" class="run" onclick="sixRun()">6</button></li>
+        </ul>
+    </div>
+    <script src="/javaScript/match.js"></script>
+</body>
+</html>

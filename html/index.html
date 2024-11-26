@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Match Details</title>
+</head>
+<body>
+    <header>
+        <h3>Cricket Scorer</h3>
+    </header>
+    <!--Match Details-->
+    <div class="match-details" onclick="detailSubmit()">
+        <!--Teams-->
+        <div class="teams">
+            <h3>Teams</h3>
+            <div class="team-name block">
+                <!--Host Team-->
+                <div class="host-team">
+                    <input type="text" id="host-team-name" placeholder="Host Team"><br>
+                    <span id="host-team-name-error"></span>
+                </div>
+                <!--Visitoer name-->
+                <div class="visitor-name">
+                    <input type="text" id="visitor-team-name" placeholder="Visitor Team" required><br>
+                    <span id="visitor-team-name-error"></span>
+                </div>
+            </div>
+        </div>
+        <!--Toss-->
+        <div class="toss">
+            <h3>Toss won by?</h3>
+            <div class="toss-won block">
+                <input type="radio" name="tss-wn" id="host-team-won">Host Team
+                <input type="radio" name="tss-wn" id="visitor-team-won" >Visitor Team <br>&nbsp;
+                <span id="toss-error"></span>
+            </div>
+        </div>
+        <!--Opted-->
+        <div class="opted">
+            <h3>Opted to?</h3>
+            <div class="opted-to block">
+                <input type="radio" name="opt" id="bat">Bat
+                <input type="radio" name="opt" id="bowl">Bowl <br>&nbsp;
+                <span id="opted-error"></span>
+            </div>
+        </div>
+        <!--Overs-->
+        <div class="overs">
+            <h3>Overs?</h3>
+            <div class="over block">
+                <input type="number" id="over-to" placeholder="16" required><br>
+                <span id="over-error"></span>
+            </div>
+        </div>
+        <!--Players-->
+        <div class="players">
+            <h2>Opening Pairs</h2>
+            <div class="batsman">
+                <div class="striker">
+                    <h3>Striker</h3>
+                    <div class="striker-name block">
+                        <input type="text" id="striker" placeholder="Enter Striker Name"><br>
+                        <span id="striker-error"></span>
+                    </div>
+                </div>
+                <div class="non-striker">
+                    <h3>Non-Striker</h3>
+                    <div class="non-striker-name block">
+                        <input type="text" id="non-striker" placeholder="Enter Non-Striker Name"><br>
+                        <span id="non-striker-error"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bowler">
+                <h3>Bowler</h3>
+                <div class="bowler-name block">
+                    <input type="text" id="bowler" placeholder="Enter Bowler Name" required><br>
+                    <span id="bowler-error"></span>
+                </div>
+            </div>
+        </div>
+        <!--Start Button-->
+        <div class="start-button">
+            <button type="button"><a href="/html/match.html">Start</button></a>
+        </div>
+    </div>
+    <script src="/javaScript/script.js"></script>
+</body>
+</html>
